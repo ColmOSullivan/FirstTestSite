@@ -1,0 +1,15 @@
+header {
+  background-color: red;
+}
+
+main {
+  background-color: blue;
+}
+
+footer {
+  background-color: blanchedalmond;
+}
+a {
+  padding: 20px;
+  display: inline-block;
+}
