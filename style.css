@@ -1,5 +1,17 @@
+/* Cascading Style-Sheet */
 header {
   background-color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
 }
 
 main {
@@ -13,3 +25,85 @@ a {
   padding: 20px;
   display: inline-block;
 }
+
+/* This targets a class it with a . */
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Card style starts here */
+
+.card {
+  background-color: antiquewhite;
+  width: 375px;
+  height: 525px;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+.green-card {
+  background-color: rgb(3, 124, 44);
+}
+/* Parent child */
+
+.name-plate {
+  margin: 0 auto;
+  width: 95%;
+  background-color: rgba(250, 235, 215, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid rgb(2, 27, 2);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.mana-cost li {
+  list-style: none;
+}
+
+.mana {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* this is the card image */
+.card-image {
+  margin: 0 auto;
+  max-width: 95%;
+  min-height: 50%;
+  border: 4px solid rgb(2, 27, 2);
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-content {
+  max-height: 100%;
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+  border: 4px solid rgb(2, 27, 2);
+  background-color: rgba(250, 235, 215, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px;
+}
+/* This targets an id with a # */
+/* Descending order of precedence: !important, #, class, element(div, footer, header, etc)   */
+/* #main {
+  color: orangered;
+} */

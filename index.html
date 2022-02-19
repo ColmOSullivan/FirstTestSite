@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test site</title>
+    <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <nav><a href="/">home</a><a href="/profile.html">profile</a></nav>
+      <nav><a href="/">home</a><a href="profile.html">profile</a></nav>
     </header>
-    <main>
-      <h1>My dog is better looking than your dog.</h1>
-      <p>He's got mad triceps AND biceps.</p>
+    <!-- Left side is the attribute name (class, id, href), 
+    right side is the attribute value (main/profile/whatever) -->
+    <main id="main" class="wrapper">
+      <div class="wrapper">
+        <h1>My dog is better looking than your dog.</h1>
+        <img
+          src="./assets/images/Jhin-in-flight.jpg"
+          alt="Jhin, the Vizsla, running in the snow."
+        />
+        <p>He's got mad triceps AND biceps.</p>
+      </div>
     </main>
     <footer>Special thanks to Corey Lantz</footer>
   </body>
